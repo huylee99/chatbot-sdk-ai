@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "baseUrl": ".",
+      "module": "ESNext",
+      "moduleResolution": "Bundler",
+      "strict": true,
+      "noUncheckedIndexedAccess": true,
+      "esModuleInterop": true,
+      "noImplicitOverride": true,
+      "skipLibCheck": true,
+      "noEmit": true
+    },
+    "include": [
+      "**/*.ts"
+    ],
+    "exclude": [
+      "./node_modules/**/*.*",
+      "./dist/**/*.*"
+    ]
+  }
