@@ -1,4 +1,4 @@
-import { add, divide, minus, multiply } from "./utils";
+import { add, divide, hoho, minus, multiply } from "./utils";
 import { test, expect } from "vitest";
 
 test("add", () => {
@@ -15,4 +15,8 @@ test("divide", () => {
 
 test("multiply", () => {
     expect(multiply(4, 2)).toBe(8);
+})
+
+test("hoho", () => {
+    expect(hoho()).toBe("hoho")
 })
