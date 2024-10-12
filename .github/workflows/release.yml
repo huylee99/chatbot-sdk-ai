@@ -31,9 +31,9 @@ jobs:
         run: pnpm run ci
   
       - name: Publish package to NPM
-        run: pnpm publish
+        run: pnpm publish --no-git-checks
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           
       - name: Release and publish
         run: npx changelogithub
