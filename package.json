@@ -3,6 +3,9 @@
   "version": "1.0.2",
   "description": "Làm cho dui hehe",
   "main": "./dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "check-exports": "attw --pack .",
     "build": "tsup",
