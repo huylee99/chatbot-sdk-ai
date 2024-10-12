@@ -19,7 +19,22 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
-
+       
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with: 
+            version: 9
+      - name: Install dependencies
+        run: pnpm install
+  
+      - name: Run CI
+        run: pnpm run ci
+  
+      - name: Publish package to NPM
+        run: pnpm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          
       - name: Release and publish
         run: npx changelogithub
         env:
