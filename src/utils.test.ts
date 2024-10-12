@@ -12,3 +12,7 @@ test("minus", () => {
 test("divide", () => {
     expect(divide(4, 2)).toBe(2);
 })
+
+test("multiply", () => {
+    expect(divide(4, 2)).toBe(8);
+})
